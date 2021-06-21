@@ -3,4 +3,23 @@
   <groupId>bits</groupId>
   <artifactId>parasmamgain</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+  <!-- https://mvnrepository.com/artifact/com.ibm.mq/com.ibm.mq.allclient -->
+	<dependency>
+	    <groupId>com.ibm.mq</groupId>
+	    <artifactId>com.ibm.mq.allclient</artifactId>
+	    <version>9.2.2.0</version>
+	</dependency>
+	<dependency>
+	   <groupId>black.ninia</groupId>
+	   <artifactId>jep</artifactId>
+	   <version>3.7.0</version>
+	</dependency>
+	 <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>4.5.10</version>
+    </dependency>
+  </dependencies>
+  
 </project>

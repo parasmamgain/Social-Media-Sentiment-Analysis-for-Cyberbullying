@@ -20,4 +20,10 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
+	<variableList>
+		<variable>
+			<name>LD_LIBRARY_PATH</name>
+			<value>$LD_LIBRARY_PATH:/Library/Frameworks/Python.framework/Versions/3.7/bin/jep</value>
+		</variable>
+	</variableList>
 </projectDescription>
