@@ -4,7 +4,7 @@ import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.List;			
 
 import javax.jms.Destination;
 import javax.jms.JMSConsumer;
@@ -47,8 +47,8 @@ public class InitializeProgram {
 		private static final String APP_USER = "2018ab04665"; 								 		// User name that application uses to connect to MQ
 		private static final String APP_PASSWORD = "LAaQqI417zcvD_WynwoTndmJDCBGvGZ5nmk_i_AkH6Sr";  // Password that the application uses to connect to MQ
 		private static final String QUEUE_NAME = "DEV.QUEUE.1"; 									// Queue that the application uses to put and get messages to and from
-		private static final String hostName = "https://7ffb9c8bfca7.ngrok.io";
-
+		private static final String hostName = "https://8ab6fa3970ba.ngrok.io";
+		//https://623aa97c8f18.ngrok.io
 		/**
 		 * Main method
 		 *
@@ -57,12 +57,13 @@ public class InitializeProgram {
 		public static void main(String[] args) {
 			
 			
-			String positiveSampleMessage = "Well, what a surprise.";
+			String positiveSampleMessage = "Well, what a surprise. demo on 25 June on early morning";
 			String negativeSampleMessage = "karma is a bitch";
+			String negativeSampleMessage1 = "\"You know what you are? You're like a big bear with claws and with fangs... big fucking teeth  man.";
 			
-			//sendMessage(positiveSampleMessage);
+			sendMessage(positiveSampleMessage);
 			
-			sendMessage(negativeSampleMessage);
+			//sendMessage(negativeSampleMessage1);
 		}
 		
 		public static void sendMessage(String messageData) {
@@ -148,18 +149,14 @@ public class InitializeProgram {
 		        
 				HttpPost post = new HttpPost(hostName+endpoint);
 				URI uri = new URIBuilder(post.getURI())
-					      .addParameter("messageData", messageData)
+					      .addParameter("message_data", messageData)
 					      .build();
 				((HttpRequestBase) post).setURI(uri);
 			
 				CloseableHttpClient httpClient = HttpClients.createDefault();
 				CloseableHttpResponse response = httpClient.execute(post);
 				String responseData = EntityUtils.toString(response.getEntity());
-				
-				
 				JSONObject result = new JSONObject(responseData);
-				
-				
 				predictedResponse = result.getInt("prediction");
 
 			}
