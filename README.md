@@ -30,7 +30,8 @@ Cyberbullying is a growing problem with no easy solutions. This paper proposes a
 
 ## Flow Diagram
 
-<img width="522" alt="image" src="https://github.com/parasmamgain/mq-cyber-bullying/assets/11806853/2841277b-cf37-4355-8d86-fc692102db12">
+<img width="522" alt="image" src="https://github.com/parasmamgain/Social-Media-Sentiment-Analysis-for-Cyberbullying/assets/11806853/ad70fd6e-426b-4af1-81a5-92156d5a36e1">
+
 
 ## Implementation
 
