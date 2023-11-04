@@ -44,10 +44,10 @@ public class InitializeProgram {
 		private static final int PORT = 31294; 												 		// Listener port for your queue manager
 		private static final String CHANNEL = "CLOUD.ADMIN.SVRCONN"; 						 		// Channel name
 		private static final String QMGR = "QueueManager1"; 								 		// Queue manager name
-		private static final String APP_USER = "2018ab04665"; 								 		// User name that application uses to connect to MQ
-		private static final String APP_PASSWORD = "LAaQqI417zcvD_WynwoTndmJDCBGvGZ5nmk_i_AkH6Sr";  // Password that the application uses to connect to MQ
+		private static final String APP_USER = "CONFIGURE_USERNAME_HERE"; 								 		// User name that application uses to connect to MQ
+		private static final String APP_PASSWORD = "CONFIGURE_PASSWORD_HERE";  // Password that the application uses to connect to MQ
 		private static final String QUEUE_NAME = "DEV.QUEUE.1"; 									// Queue that the application uses to put and get messages to and from
-		private static final String hostName = "https://8ab6fa3970ba.ngrok.io";
+		private static final String hostName = "https://<HOSTNAME>";
 		//https://623aa97c8f18.ngrok.io
 		/**
 		 * Main method
